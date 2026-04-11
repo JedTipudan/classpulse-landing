@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ClassPulse – Smart Student Schedule App</title>
+  <meta name="description" content="ClassPulse is a smart student schedule reminder app. Never miss a class again." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ░░ TOAST ░░ -->
+  <div id="toast" class="toast" aria-live="polite"></div>
+
+  <!-- ░░ NAV ░░ -->
+  <nav class="nav" id="nav">
+    <div class="nav-inner">
+      <span class="logo">Class<span class="accent">Pulse</span></span>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#features" onclick="closeNav()">Features</a></li>
+        <li><a href="#how-it-works" onclick="closeNav()">How It Works</a></li>
+        <li><a href="#demo" onclick="closeNav()">Demo</a></li>
+        <li><a href="#contact" onclick="closeNav()">Contact</a></li>
+      </ul>
+      <a href="#download" class="btn btn-sm nav-dl-btn">Download</a>
+      <button class="hamburger" id="hamburger" onclick="toggleNav()" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ░░ HERO ░░ -->
+  <section class="hero" id="home">
+    <div class="hero-bg"></div>
+    <div class="container hero-content">
+      <div class="hero-text">
+        <div class="badge skeleton-wrap" id="badge">
+          <span class="skeleton badge-skeleton"></span>
+        </div>
+        <h1 class="skeleton-wrap" id="hero-title">
+          <span class="skeleton h1-skeleton"></span>
+          <span class="skeleton h1-skeleton short"></span>
+        </h1>
+        <p class="hero-sub skeleton-wrap" id="hero-sub">
+          <span class="skeleton p-skeleton"></span>
+          <span class="skeleton p-skeleton short"></span>
+        </p>
+        <div class="hero-actions skeleton-wrap" id="hero-actions">
+          <span class="skeleton btn-skeleton"></span>
+          <span class="skeleton btn-skeleton ghost"></span>
+        </div>
+        <div class="hero-stats skeleton-wrap" id="hero-stats">
+          <span class="skeleton stat-skeleton"></span>
+          <span class="skeleton stat-skeleton"></span>
+          <span class="skeleton stat-skeleton"></span>
+        </div>
+      </div>
+      <div class="hero-phone skeleton-wrap" id="hero-phone">
+        <span class="skeleton phone-skeleton"></span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ░░ FEATURES ░░ -->
+  <section class="section" id="features">
+    <div class="container">
+      <div class="section-header">
+        <h2>Everything You Need</h2>
+        <p>Built for students who want to stay on top of their schedule — effortlessly.</p>
+      </div>
+      <div class="features-grid" id="features-grid">
+        <!-- JS rendered -->
+      </div>
+    </div>
+  </section>
+
+  <!-- ░░ HOW IT WORKS ░░ -->
+  <section class="section alt" id="how-it-works">
+    <div class="container">
+      <div class="section-header">
+        <h2>How It Works</h2>
+        <p>Set it once. ClassPulse handles the rest.</p>
+      </div>
+      <div class="steps" id="steps">
+        <!-- JS rendered -->
+      </div>
+    </div>
+  </section>
+
+  <!-- ░░ DEMO VIDEO ░░ -->
+  <section class="section" id="demo">
+    <div class="container">
+      <div class="section-header">
+        <h2>See It In Action</h2>
+        <p>Watch how ClassPulse keeps you on schedule every single day.</p>
+      </div>
+      <div class="video-wrapper" id="video-wrapper">
+        <div class="video-placeholder" id="video-placeholder">
+          <div class="play-btn" id="play-btn" onclick="openVideoModal()">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+          </div>
+          <p class="video-label">App Demo — Coming Soon</p>
+          <p class="video-sub">Video will be available once uploaded to YouTube</p>
+        </div>
+        <!-- Replace src below with your YouTube embed URL when ready -->
+        <iframe
+          id="yt-embed"
+          class="yt-embed hidden"
+          src=""
+          title="ClassPulse Demo"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen>
+        </iframe>
+      </div>
+    </div>
+  </section>
+
+  <!-- ░░ DOWNLOAD ░░ -->
+  <section class="section alt" id="download">
+    <div class="container">
+      <div class="section-header">
+        <h2>Download ClassPulse</h2>
+        <p>Free. No account needed. Works offline.</p>
+      </div>
+      <div class="download-card">
+        <div class="download-info" id="download-info">
+          <div class="dl-icon">📱</div>
+          <div>
+            <div class="dl-name skeleton-wrap" id="dl-name">
+              <span class="skeleton dl-skeleton"></span>
+            </div>
+            <div class="dl-meta skeleton-wrap" id="dl-meta">
+              <span class="skeleton dl-meta-skeleton"></span>
+            </div>
+          </div>
+        </div>
+        <button class="btn btn-lg" id="dl-btn" onclick="handleDownload()" disabled>
+          <span class="skeleton btn-dl-skeleton"></span>
+        </button>
+      </div>
+      <p class="dl-note">Android 8.0+ required &nbsp;·&nbsp; ~15 MB &nbsp;·&nbsp; No ads, no tracking</p>
+    </div>
+  </section>
+
+  <!-- ░░ SUPPORT / DONATE ░░ -->
+  <section class="section" id="support">
+    <div class="container">
+      <div class="support-card">
+        <div class="support-text">
+          <span class="support-emoji">💙</span>
+          <h2>Support via GCash</h2>
+          <p>ClassPulse is free and always will be. If it helped you never miss a class, consider sending a small amount via GCash — it keeps the updates coming and the developer caffeinated!</p>
+          <button class="btn btn-coffee" onclick="openDonateModal()">💙 Send via GCash</button>
+        </div>
+        <div class="support-img">
+          <div class="coffee-art">☕</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ░░ CONTACT / SOCIAL ░░ -->
+  <section class="section alt" id="contact">
+    <div class="container">
+      <div class="section-header">
+        <h2>Get In Touch</h2>
+        <p>Have feedback, bugs to report, or just want to say hi? Reach out anytime.</p>
+      </div>
+      <div class="socials">
+        <a href="https://www.facebook.com/i11181999" target="_blank" rel="noopener" class="social-card facebook" onclick="trackSocial('Facebook')">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+          <span>Facebook</span>
+          <small>@i11181999</small>
+        </a>
+        <a href="https://www.instagram.com/jedtipudan_" target="_blank" rel="noopener" class="social-card instagram" onclick="trackSocial('Instagram')">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+          <span>Instagram</span>
+          <small>@jedtipudan_</small>
+        </a>
+        <a href="https://www.youtube.com/@parokyanijed" target="_blank" rel="noopener" class="social-card youtube" onclick="trackSocial('YouTube')">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.95-1.96C18.88 4 12 4 12 4s-6.88 0-8.59.46A2.78 2.78 0 0 0 1.46 6.42 29 29 0 0 0 1 12a29 29 0 0 0 .46 5.58 2.78 2.78 0 0 0 1.95 1.96C5.12 20 12 20 12 20s6.88 0 8.59-.46a2.78 2.78 0 0 0 1.96-1.96A29 29 0 0 0 23 12a29 29 0 0 0-.46-5.58z"/><polygon points="9.75 15.02 15.5 12 9.75 8.98 9.75 15.02" fill="white"/></svg>
+          <span>YouTube</span>
+          <small>@parokyanijed</small>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ░░ FOOTER ░░ -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <span class="logo">Class<span class="accent">Pulse</span></span>
+      <p>Made with ❤️ by <a href="https://www.facebook.com/i11181999" target="_blank">Jed Tipudan</a></p>
+      <p class="footer-copy">© 2025 ClassPulse · Free & Open Source</p>
+    </div>
+  </footer>
+
+  <!-- ░░ VIDEO MODAL ░░ -->
+  <div class="modal-overlay" id="video-modal" onclick="closeModal('video-modal')">
+    <div class="modal" onclick="event.stopPropagation()">
+      <button class="modal-close" onclick="closeModal('video-modal')">✕</button>
+      <h3>App Demo</h3>
+      <p style="color:var(--muted);margin-top:.5rem;">The demo video will be available once uploaded. Subscribe on YouTube to get notified!</p>
+      <a href="https://www.youtube.com/@parokyanijed" target="_blank" class="btn" style="margin-top:1.5rem;display:inline-flex;">Subscribe on YouTube</a>
+    </div>
+  </div>
+
+  <!-- ░░ DONATE MODAL ░░ -->
+  <div class="modal-overlay" id="donate-modal" onclick="closeModal('donate-modal')">
+    <div class="modal" onclick="event.stopPropagation()">
+      <button class="modal-close" onclick="closeModal('donate-modal')">✕</button>
+      <div style="text-align:center">
+        <div style="font-size:3rem;margin-bottom:.75rem;">☕</div>
+        <h3>Buy Me a Coffee</h3>
+        <p style="color:var(--muted);margin:.6rem 0 1.5rem;font-size:.92rem;">ClassPulse is free and always will be. If it helped you, send a small amount via GCash — it keeps the updates coming!</p>
+        <div class="gcash-card">
+          <div class="gcash-logo">
+            <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" width="40" height="40">
+              <rect width="48" height="48" rx="12" fill="#007DFF"/>
+              <text x="50%" y="58%" dominant-baseline="middle" text-anchor="middle" fill="white" font-size="13" font-weight="800" font-family="Inter,sans-serif">GCash</text>
+            </svg>
+            <span class="gcash-title">GCash</span>
+          </div>
+          <div class="gcash-details">
+            <div class="gcash-name">Jed Tipudan</div>
+            <div class="gcash-number" id="gcash-number">09755918109</div>
+          </div>
+          <button class="btn btn-sm gcash-copy" id="copy-gcash-btn" onclick="copyGcash()">📋 Copy Number</button>
+        </div>
+        <div class="gcash-steps">
+          <p class="gcash-steps-title">How to send:</p>
+          <ol>
+            <li>Open your <strong>GCash app</strong></li>
+            <li>Tap <strong>Send Money → GCash</strong></li>
+            <li>Enter number: <strong>09755918109</strong></li>
+            <li>Enter any amount &amp; tap <strong>Send</strong></li>
+          </ol>
+        </div>
+        <p style="font-size:.75rem;color:var(--muted);margin-top:1rem;">Thank you so much! Every peso means a lot. ❤️</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- ░░ DOWNLOAD CONFIRM MODAL ░░ -->
+  <div class="modal-overlay" id="dl-modal" onclick="closeModal('dl-modal')">
+    <div class="modal" onclick="event.stopPropagation()">
+      <button class="modal-close" onclick="closeModal('dl-modal')">✕</button>
+      <div style="text-align:center">
+        <div style="font-size:3rem;margin-bottom:1rem;">📲</div>
+        <h3 id="dl-modal-title">Downloading ClassPulse</h3>
+        <p style="color:var(--muted);margin:.75rem 0 1.5rem;" id="dl-modal-body">Your download is starting. Once installed, enable <strong>Install Unknown Apps</strong> in your phone settings.</p>
+        <div style="background:var(--surface);border-radius:12px;padding:1rem;text-align:left;margin-bottom:1.5rem;">
+          <p style="font-size:.85rem;font-weight:600;margin-bottom:.5rem;">Quick Install Guide:</p>
+          <ol style="font-size:.82rem;color:var(--muted);padding-left:1.2rem;line-height:1.8;">
+            <li>Download completes → open the APK file</li>
+            <li>Tap <strong>Install</strong> (allow unknown sources if prompted)</li>
+            <li>Open ClassPulse → allow notification permission</li>
+            <li>Add your first class and you're done! 🎉</li>
+          </ol>
+        </div>
+        <button class="btn" onclick="closeModal('dl-modal')">Got it!</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
