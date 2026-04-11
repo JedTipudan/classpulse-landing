@@ -2,7 +2,7 @@
 const CONFIG = {
   version: "1.1.8",
   apkUrl: "https://github.com/JedTipudan/classpulse-privacy/releases/download/v1.1.8/app-release.apk",
-  youtubeEmbedUrl: "", // paste your YouTube embed URL here when ready
+  youtubeEmbedUrl: "https://www.youtube.com/embed/8MOzgcf423A",
   gcash: { number: "09755918109", name: "Jed Tipudan" },
 };
 
@@ -188,16 +188,10 @@ function handleDownload() {
 
 /* ── VIDEO ── */
 function openVideoModal() {
-  if (CONFIG.youtubeEmbedUrl) {
-    // Show embedded video
-    document.getElementById("video-placeholder").classList.add("hidden");
-    const embed = document.getElementById("yt-embed");
-    embed.src = CONFIG.youtubeEmbedUrl + "?autoplay=1";
-    embed.classList.remove("hidden");
-  } else {
-    openModal("video-modal");
-    showToast("Video coming soon! Subscribe on YouTube 🎬");
-  }
+  document.getElementById("video-placeholder").classList.add("hidden");
+  const embed = document.getElementById("yt-embed");
+  embed.src = CONFIG.youtubeEmbedUrl + "?autoplay=1";
+  embed.classList.remove("hidden");
 }
 
 /* ── SOCIAL TRACKING ── */
