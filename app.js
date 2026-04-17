@@ -2,7 +2,8 @@
 const CONFIG = {
   version: "1.1.8",
   apkUrl: "https://github.com/JedTipudan/classpulse-privacy/releases/download/v1.1.8/app-release.apk",
-  youtubeEmbedUrl: "https://www.youtube.com/embed/8MOzgcf423A",
+  tiktokUrl: "https://www.tiktok.com/@akirahange13/video/7627504751067893012",
+  tiktokEmbedId: "7627504751067893012",
   gcash: { number: "09755918109", name: "Jed Tipudan" },
 };
 
@@ -190,7 +191,7 @@ function handleDownload() {
 function openVideoModal() {
   document.getElementById("video-placeholder").classList.add("hidden");
   const embed = document.getElementById("yt-embed");
-  embed.src = CONFIG.youtubeEmbedUrl + "?autoplay=1";
+  embed.src = `https://www.tiktok.com/embed/v2/${CONFIG.tiktokEmbedId}`;
   embed.classList.remove("hidden");
 }
 
