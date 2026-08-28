@@ -1,0 +1,3 @@
+version=1.2.0
+download=https://github.com/jedtipudan/classpulse/releases/latest/download/app-release.apk
+notes=Scan your COR with AI, vibrate-only mode for silent reminders, improved notifications

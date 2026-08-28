@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ClassPulse — Smart Student Schedule App</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <div class="bg-blobs">
+    <div class="blob blob-1"></div>
+    <div class="blob blob-2"></div>
+    <div class="blob blob-3"></div>
+    <div class="blob blob-4"></div>
+  </div>
+
+  <!-- Navbar -->
+  <nav class="navbar glass">
+    <div class="nav-inner">
+      <div class="nav-logo">
+        <span class="logo-icon">📚</span>
+        <span class="logo-text">ClassPulse</span>
+      </div>
+      <div class="nav-links">
+        <a href="#features">Features</a>
+        <a href="#how">How it works</a>
+        <a href="#install">Install</a>
+        <a href="#download">Download</a>
+      </div>
+      <a href="#download" class="nav-cta glass-btn">Get App</a>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="hero-content">
+      <div class="hero-badge glass-pill">✨ Smart Schedule Reminders</div>
+      <h1 class="hero-title">
+        Never Miss a<br />
+        <span class="gradient-text">Class Again</span>
+      </h1>
+      <p class="hero-sub">
+        ClassPulse reads your COR or schedule photo using AI, auto-fills your timetable,
+        and reminds you — with sound or silent vibration — exactly when you need it.
+      </p>
+      <div class="hero-actions">
+        <a href="#download" class="btn-primary glass-btn">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M12 16l-6-6h4V4h4v6h4l-6 6z"/><path d="M4 20h16"/></svg>
+          Download Free
+        </a>
+        <a href="#install" class="btn-ghost glass-btn">How to Install →</a>
+      </div>
+      <div class="hero-stats">
+        <div class="stat glass-pill">
+          <span class="stat-num">14</span>
+          <span class="stat-label">Days ahead</span>
+        </div>
+        <div class="stat glass-pill">
+          <span class="stat-num">AI</span>
+          <span class="stat-label">OCR Scan</span>
+        </div>
+        <div class="stat glass-pill">
+          <span class="stat-num">0</span>
+          <span class="stat-label">Missed classes</span>
+        </div>
+      </div>
+    </div>
+    <div class="hero-visual">
+      <div class="phone-mockup glass">
+        <div class="phone-screen">
+          <div class="phone-header">
+            <span class="phone-title">ClassPulse</span>
+            <span class="phone-date">Monday, July 14</span>
+          </div>
+          <div class="phone-card glass" style="--c:#6750A4">
+            <div class="card-dot" style="background:#6750A4"></div>
+            <div class="card-info">
+              <div class="card-subject">Mathematics</div>
+              <div class="card-time">8:00 AM – 9:30 AM</div>
+            </div>
+            <div class="card-badge next">NEXT</div>
+          </div>
+          <div class="phone-card glass" style="--c:#1E88E5">
+            <div class="card-dot" style="background:#1E88E5"></div>
+            <div class="card-info">
+              <div class="card-subject">Physics</div>
+              <div class="card-time">10:00 AM – 11:30 AM</div>
+            </div>
+          </div>
+          <div class="phone-card glass" style="--c:#43A047">
+            <div class="card-dot" style="background:#43A047"></div>
+            <div class="card-info">
+              <div class="card-subject">English</div>
+              <div class="card-time">1:00 PM – 2:30 PM</div>
+            </div>
+          </div>
+          <div class="phone-notif glass">
+            <span>⏰</span>
+            <div>
+              <div class="notif-title">Class in 10 minutes</div>
+              <div class="notif-body">Physics • 10:00 AM</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="phone-glow"></div>
+    </div>
+  </section>
+
+  <!-- Features -->
+  <section class="features" id="features">
+    <div class="section-label glass-pill">Features</div>
+    <h2 class="section-title">Everything you need,<br /><span class="gradient-text">nothing you don't</span></h2>
+    <div class="features-grid">
+      <div class="feature-card glass">
+        <div class="feature-icon">📷</div>
+        <h3>Scan Your COR</h3>
+        <p>Take a photo or upload your Certificate of Registration. AI reads it and fills your schedule automatically.</p>
+      </div>
+      <div class="feature-card glass featured">
+        <div class="feature-icon">🔔</div>
+        <h3>Smart Notifications</h3>
+        <p>Get reminded 10 minutes before class and at the exact start time. Works even when the app is closed.</p>
+      </div>
+      <div class="feature-card glass">
+        <div class="feature-icon">📳</div>
+        <h3>Vibrate-Only Mode</h3>
+        <p>In class? Switch to silent vibration so you never get caught with a loud alarm going off mid-lecture.</p>
+      </div>
+      <div class="feature-card glass">
+        <div class="feature-icon">📅</div>
+        <h3>Weekly View</h3>
+        <p>See your full week at a glance with color-coded subjects and day tabs from Monday to Sunday.</p>
+      </div>
+      <div class="feature-card glass">
+        <div class="feature-icon">☁️</div>
+        <h3>Google Drive Backup</h3>
+        <p>Sign in with Google to back up and restore your schedules and notes across devices.</p>
+      </div>
+      <div class="feature-card glass">
+        <div class="feature-icon">🔄</div>
+        <h3>Auto Updates</h3>
+        <p>The app checks GitHub for new releases and notifies you in-app when an update is available.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- How it works -->
+  <section class="how" id="how">
+    <div class="section-label glass-pill">How it works</div>
+    <h2 class="section-title">Set up in <span class="gradient-text">3 steps</span></h2>
+    <div class="steps">
+      <div class="step glass">
+        <div class="step-num">01</div>
+        <div class="step-icon">📲</div>
+        <h3>Install the app</h3>
+        <p>Download the APK for Android or use Expo Go for iOS. Takes less than a minute.</p>
+      </div>
+      <div class="step-arrow">→</div>
+      <div class="step glass">
+        <div class="step-num">02</div>
+        <div class="step-icon">📷</div>
+        <h3>Scan your schedule</h3>
+        <p>Tap the scan button, take a photo of your COR or class schedule, and let AI do the rest.</p>
+      </div>
+      <div class="step-arrow">→</div>
+      <div class="step glass">
+        <div class="step-num">03</div>
+        <div class="step-icon">✅</div>
+        <h3>Confirm &amp; go</h3>
+        <p>Review the detected classes, tap Save, and you're done. Notifications are scheduled automatically.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── INSTALL TUTORIAL ── -->
+  <section class="install-section" id="install">
+    <div class="section-label glass-pill">Installation Guide</div>
+    <h2 class="section-title">Install on your<br /><span class="gradient-text">phone in minutes</span></h2>
+
+    <!-- OS Tabs -->
+    <div class="os-tabs glass-pill" role="tablist">
+      <button class="os-tab active" data-tab="android" role="tab">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M17.523 15.341a.5.5 0 0 1-.5.5H6.977a.5.5 0 0 1-.5-.5V9.5h11.046v5.841zM7.5 18.5a1 1 0 1 0 2 0 1 1 0 0 0-2 0zm7 0a1 1 0 1 0 2 0 1 1 0 0 0-2 0zM3.513 8.5l1.5-4.5h14l1.5 4.5H3.513zM15.3 2.2l1.4 2.3M8.7 2.2 7.3 4.5"/></svg>
+        Android
+      </button>
+      <button class="os-tab" data-tab="ios" role="tab">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg>
+        iOS (Expo)
+      </button>
+    </div>
+
+    <!-- Android Tab -->
+    <div class="tab-content active" id="tab-android">
+      <div class="tutorial-grid">
+
+        <div class="tutorial-step glass">
+          <div class="tut-num">1</div>
+          <div class="tut-body">
+            <div class="tut-icon">⬇️</div>
+            <h3>Download the APK</h3>
+            <p>Tap the button below to download the latest <code>app-release.apk</code> from GitHub Releases.</p>
+            <a href="https://github.com/jedtipudan/classpulse/releases/latest/download/app-release.apk"
+               class="tut-btn glass-btn btn-primary" id="apk-download">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M12 16l-6-6h4V4h4v6h4l-6 6z"/><path d="M4 20h16"/></svg>
+              Download APK
+            </a>
+          </div>
+        </div>
+
+        <div class="tutorial-step glass">
+          <div class="tut-num">2</div>
+          <div class="tut-body">
+            <div class="tut-icon">🔓</div>
+            <h3>Allow Unknown Apps</h3>
+            <p>Android blocks installs from outside the Play Store by default. Here's how to allow it:</p>
+            <div class="tut-steps-list">
+              <div class="tut-li"><span class="tut-dot"></span>Open your phone's <strong>Settings</strong></div>
+              <div class="tut-li"><span class="tut-dot"></span>Go to <strong>Apps</strong> → <strong>Special app access</strong></div>
+              <div class="tut-li"><span class="tut-dot"></span>Tap <strong>Install unknown apps</strong></div>
+              <div class="tut-li"><span class="tut-dot"></span>Select your browser or file manager</div>
+              <div class="tut-li"><span class="tut-dot"></span>Toggle <strong>Allow from this source</strong> ON</div>
+            </div>
+            <div class="tut-note glass-pill">💡 On some phones this prompt appears automatically when you open the APK</div>
+          </div>
+        </div>
+
+        <div class="tutorial-step glass">
+          <div class="tut-num">3</div>
+          <div class="tut-body">
+            <div class="tut-icon">📂</div>
+            <h3>Open &amp; Install</h3>
+            <p>Find the downloaded file and install it:</p>
+            <div class="tut-steps-list">
+              <div class="tut-li"><span class="tut-dot"></span>Pull down your notification shade</div>
+              <div class="tut-li"><span class="tut-dot"></span>Tap the downloaded <code>app-release.apk</code></div>
+              <div class="tut-li"><span class="tut-dot"></span>Tap <strong>Install</strong> on the prompt</div>
+              <div class="tut-li"><span class="tut-dot"></span>Tap <strong>Open</strong> when done</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="tutorial-step glass">
+          <div class="tut-num">4</div>
+          <div class="tut-body">
+            <div class="tut-icon">🔔</div>
+            <h3>Grant Permissions</h3>
+            <p>ClassPulse needs a couple of permissions to work properly:</p>
+            <div class="tut-steps-list">
+              <div class="tut-li"><span class="tut-dot"></span><strong>Notifications</strong> — tap Allow when prompted</div>
+              <div class="tut-li"><span class="tut-dot"></span><strong>Exact Alarms</strong> (Android 12+) — go to Settings → Apps → ClassPulse → Alarms &amp; Reminders → Allow</div>
+              <div class="tut-li"><span class="tut-dot"></span><strong>Camera</strong> — needed for scanning your COR</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="tutorial-step glass tut-full">
+          <div class="tut-num">5</div>
+          <div class="tut-body">
+            <div class="tut-icon">🔄</div>
+            <h3>Staying Updated</h3>
+            <p>ClassPulse checks GitHub automatically for new versions every time you open the app. When a new release is published, you'll see a popup like this:</p>
+            <div class="update-preview glass">
+              <div class="update-header">
+                <span>🔄</span>
+                <strong>New Update!</strong>
+              </div>
+              <p class="update-body">Version 1.2.0 is available.<br/><span class="update-notes">Bug fixes, improved OCR accuracy, new color themes.</span></p>
+              <div class="update-actions">
+                <span class="update-later">Later</span>
+                <span class="update-dl glass-btn btn-primary">Download</span>
+              </div>
+            </div>
+            <p style="margin-top:12px">Tap <strong>Download</strong> and it will open the GitHub release page where you can grab the new APK.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- iOS Tab -->
+    <div class="tab-content" id="tab-ios">
+      <div class="ios-banner glass">
+        <div class="ios-banner-icon">🍎</div>
+        <div>
+          <h3>iOS via Expo Go</h3>
+          <p>The native iOS app is in development. In the meantime, you can run ClassPulse on iPhone using <strong>Expo Go</strong> — no App Store, no Mac needed.</p>
+        </div>
+      </div>
+
+      <div class="tutorial-grid">
+
+        <div class="tutorial-step glass">
+          <div class="tut-num">1</div>
+          <div class="tut-body">
+            <div class="tut-icon">📲</div>
+            <h3>Install Expo Go</h3>
+            <p>Download the free Expo Go app from the App Store on your iPhone.</p>
+            <a href="https://apps.apple.com/app/expo-go/id982107779"
+               class="tut-btn glass-btn btn-primary" target="_blank">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg>
+              Get Expo Go on App Store
+            </a>
+          </div>
+        </div>
+
+        <div class="tutorial-step glass">
+          <div class="tut-num">2</div>
+          <div class="tut-body">
+            <div class="tut-icon">💻</div>
+            <h3>Set Up on Your Computer</h3>
+            <p>You need Node.js installed. Then run these commands in Terminal:</p>
+            <div class="code-block glass">
+              <div class="code-line"><span class="code-comment"># Install Node.js from nodejs.org first, then:</span></div>
+              <div class="code-line"><span class="code-cmd">npm</span> install -g expo-cli</div>
+              <div class="code-line"><span class="code-cmd">git</span> clone https://github.com/jedtipudan/classpulse.git</div>
+              <div class="code-line"><span class="code-cmd">cd</span> classpulse-rn</div>
+              <div class="code-line"><span class="code-cmd">npm</span> install</div>
+              <div class="code-line"><span class="code-cmd">npx expo</span> start</div>
+            </div>
+            <div class="tut-note glass-pill">💡 Node.js download: <a href="https://nodejs.org" target="_blank" style="color:#a78bfa">nodejs.org</a></div>
+          </div>
+        </div>
+
+        <div class="tutorial-step glass">
+          <div class="tut-num">3</div>
+          <div class="tut-body">
+            <div class="tut-icon">📱</div>
+            <h3>Scan the QR Code</h3>
+            <p>After running <code>npx expo start</code>, a QR code appears in your terminal.</p>
+            <div class="tut-steps-list">
+              <div class="tut-li"><span class="tut-dot"></span>Open the <strong>Camera</strong> app on your iPhone</div>
+              <div class="tut-li"><span class="tut-dot"></span>Point it at the QR code in your terminal</div>
+              <div class="tut-li"><span class="tut-dot"></span>Tap the <strong>Open in Expo Go</strong> banner</div>
+              <div class="tut-li"><span class="tut-dot"></span>ClassPulse loads on your phone!</div>
+            </div>
+            <div class="tut-note glass-pill">📡 Your phone and computer must be on the same Wi-Fi network</div>
+          </div>
+        </div>
+
+        <div class="tutorial-step glass">
+          <div class="tut-num">4</div>
+          <div class="tut-body">
+            <div class="tut-icon">🏗️</div>
+            <h3>Build a Standalone IPA (Optional)</h3>
+            <p>Want a real installable app without needing a computer running? Use Expo EAS Build — it builds in the cloud for free.</p>
+            <div class="code-block glass">
+              <div class="code-line"><span class="code-cmd">npm</span> install -g eas-cli</div>
+              <div class="code-line"><span class="code-cmd">eas</span> login</div>
+              <div class="code-line"><span class="code-cmd">eas</span> build --platform ios</div>
+            </div>
+            <div class="tut-steps-list" style="margin-top:12px">
+              <div class="tut-li"><span class="tut-dot"></span>Create a free account at <a href="https://expo.dev" target="_blank" style="color:#a78bfa">expo.dev</a></div>
+              <div class="tut-li"><span class="tut-dot"></span>EAS builds the IPA on Expo's servers</div>
+              <div class="tut-li"><span class="tut-dot"></span>Download and install via TestFlight or direct install</div>
+            </div>
+            <div class="tut-note glass-pill">⚠️ An Apple Developer account ($99/yr) is required to publish to the App Store</div>
+          </div>
+        </div>
+
+        <div class="tutorial-step glass tut-full">
+          <div class="tut-num">5</div>
+          <div class="tut-body">
+            <div class="tut-icon">🔄</div>
+            <h3>iOS Updates</h3>
+            <p>When using Expo Go, updates are instant — just re-scan the QR code after pulling the latest code:</p>
+            <div class="code-block glass">
+              <div class="code-line"><span class="code-cmd">git</span> pull origin main</div>
+              <div class="code-line"><span class="code-cmd">npx expo</span> start</div>
+            </div>
+            <p style="margin-top:12px;color:var(--text-muted);font-size:14px">For EAS builds, run <code>eas update</code> to push over-the-air JS updates without rebuilding the whole app.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Download -->
+  <section class="download" id="download">
+    <div class="download-card glass">
+      <div class="download-glow"></div>
+      <div class="section-label glass-pill">Download</div>
+      <h2 class="section-title">Get ClassPulse<br /><span class="gradient-text">Free, forever</span></h2>
+      <p class="download-sub">No account required. No ads. Just your schedule, always on time.</p>
+      <div class="download-buttons">
+        <a href="https://github.com/jedtipudan/classpulse/releases/latest/download/app-release.apk"
+           class="btn-primary glass-btn download-btn" id="apk-download-2">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M12 16l-6-6h4V4h4v6h4l-6 6z"/><path d="M4 20h16"/></svg>
+          <span>Download for Android</span>
+          <span class="btn-sub">APK · Free · Latest from GitHub</span>
+        </a>
+        <a href="https://apps.apple.com/app/expo-go/id982107779"
+           class="glass-btn download-btn" target="_blank">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg>
+          <span>iOS via Expo Go</span>
+          <span class="btn-sub">iPhone · See install guide above</span>
+        </a>
+      </div>
+      <a href="https://github.com/jedtipudan/classpulse/releases" target="_blank" class="releases-link">
+        View all releases on GitHub →
+      </a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer glass">
+    <div class="footer-inner">
+      <div class="nav-logo">
+        <span class="logo-icon">📚</span>
+        <span class="logo-text">ClassPulse</span>
+      </div>
+      <p class="footer-copy">Built for students, by a student. Open source on GitHub.</p>
+      <div class="footer-links">
+        <a href="https://github.com/jedtipudan/classpulse" target="_blank">GitHub</a>
+        <a href="https://github.com/jedtipudan/classpulse/releases" target="_blank">Releases</a>
+        <a href="#features">Features</a>
+        <a href="#install">Install</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
