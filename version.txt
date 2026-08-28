@@ -1,3 +1,7 @@
-version=1.2.0
-download=https://github.com/jedtipudan/classpulse/releases/latest/download/app-release.apk
-notes=Scan your COR with AI, vibrate-only mode for silent reminders, improved notifications
+version=1.1.8
+download=https://github.com/JedTipudan/classpulse-privacy/releases/download/v1.1.8/app-release.apk
+- ✨ Completely redesigned the UI with glassmorphism
+- 🎨 Added spelling grammar checker and ai writing assistant
+- 🐛 Fixed spelling grammar checker and ai writing assistant not working
+- 📝 Overhauled the notepad to match the new aesthetic
+- ⚠️ PLEASE MAKE A BACKUP FIRST BEFORE UPDATING THE APP THANK YOU
