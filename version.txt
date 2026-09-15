@@ -1,6 +1,7 @@
-version=1.1.9
-download=https://github.com/JedTipudan/classpulse-privacy/releases/download/v1.1.9/app-release.apk
-- 📷 Scan your COR or schedule photo with AI
-- 📳 Vibrate-only mode for silent reminders in class
-- 🔔 Improved notification scheduling
-- 🌐 New landing page at classpulse.vercel.app
+version=1.2.0
+download=https://github.com/JedTipudan/classpulse-privacy/releases/download/v1.2.0/app-release.apk
+- 🌐 Multi-language support (20 languages: Filipino, Bisaya, Chinese, Japanese, Korean, Spanish, French & more)
+- 📷 Improved COR scan — works with any university schedule format
+- 🔧 Fixed note editor crash on new devices
+- 🔧 Fixed missing app icon on fresh installs
+- ⚡ Performance improvements & stability fixes
