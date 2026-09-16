@@ -1,7 +1,7 @@
-version=1.2.0
-download=https://github.com/JedTipudan/classpulse-privacy/releases/download/v1.2.0/app-release.apk
-- 🌐 Multi-language support (20 languages: Filipino, Bisaya, Chinese, Japanese, Korean, Spanish, French & more)
-- 📷 Improved COR scan — works with any university schedule format
-- 🔧 Fixed note editor crash on new devices
-- 🔧 Fixed missing app icon on fresh installs
-- ⚡ Performance improvements & stability fixes
+version=1.2.1
+download=https://github.com/JedTipudan/classpulse-privacy/releases/download/v1.2.1/app-release.apk
+- 📷 Fixed COR scan — now shows course names instead of codes
+- 🔙 Fixed back button black screen on scan page
+- 🌐 Fixed language switching — Filipino, Bisaya & all languages now apply instantly
+- ✨ Smoother animations on scan results
+- ✏️ Added edit button to fix subject names after scanning
