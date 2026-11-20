@@ -1,7 +1,7 @@
 /* ── CONFIG ── */
 const CONFIG = {
-  version: "1.1.8",
-  apkUrl: "https://github.com/JedTipudan/classpulse-privacy/releases/download/v1.1.8/app-release.apk",
+  version: "1.2.2",
+  apkUrl: "https://github.com/JedTipudan/classpulse-privacy/releases/download/v1.2.2/app-release.apk",
   tiktokUrl: "https://www.tiktok.com/@akirahange13/video/7627504751067893012",
   tiktokEmbedId: "7627504751067893012",
   gcash: { number: "09755918109", name: "Jed Tipudan" },

@@ -1,7 +1,8 @@
-version=1.2.1
-download=https://github.com/JedTipudan/classpulse-privacy/releases/download/v1.2.1/app-release.apk
-- 📷 Fixed COR scan — now shows course names instead of codes
-- 🔙 Fixed back button black screen on scan page
-- 🌐 Fixed language switching — Filipino, Bisaya & all languages now apply instantly
-- ✨ Smoother animations on scan results
-- ✏️ Added edit button to fix subject names after scanning
+version=1.2.2
+download=https://github.com/JedTipudan/classpulse-privacy/releases/download/v1.2.2/app-release.apk
+- 📷 Smarter COR / schedule scan — reads tables row by row, works with most school formats
+- ✏️ Fix subject, days and time of any scanned class before saving
+- 🌐 Bisaya, Filipino & all languages now translate the whole app
+- 🔔 Reminders survive phone restarts; Bell/Chime/Alarm sounds now play
+- 💾 Backup now keeps full notes and calendar events
+- 🐞 Fixed black screen after closing a note, plus other bug fixes
